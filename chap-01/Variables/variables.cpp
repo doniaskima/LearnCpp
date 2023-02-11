@@ -14,9 +14,7 @@ main(){
     // 3:Variable name should not contain space
     //4:Variable name should be self-descriptive 
     //5:Variable name can't have special characters or keywords .
-
     //Re-intialization of A
-
     A = 10;
     cout<<A<<endl;
     cout << &A;
