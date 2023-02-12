@@ -32,5 +32,10 @@ int main(){
     cout<<"&my_p : "<<&my_p<<endl; //Address of pointer itselfe
 
     int **pp = &my_p;//Pointer pointing to address of another pointer
-    cout<<"pp :"<<pp<<endl;
-}
+    cout<<"pp : "<<pp<<endl;
+    cout<<"&pp : "<<&pp<<endl;
+    cout<<"*pp :"<<*pp<<endl;
+    cout<<"**pp :"<<**pp<<endl;
+
+    return 0;
+} 
