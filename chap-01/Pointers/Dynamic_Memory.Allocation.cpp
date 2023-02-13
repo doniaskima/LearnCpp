@@ -6,8 +6,9 @@ int main() {
     cout<<"How many numbers would you like to store in the array ? "<<endl;
     cin>>amount;
     int *p = new (nothrow) int(amount);
+    
     if(p != NULL) {
-        
+
         for(int i=0;i<amount;i++) {
             cout<<"Enter the "<<(i+1)<<" number : "<<endl;
             cin>>p[i];
