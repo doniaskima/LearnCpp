@@ -11,7 +11,6 @@ int arr[SIZE];
 int top_1 = -1;
 int top_2 = SIZE;
 
-
 /*----------------This function is used to push elements into stack 1--------------------------*/
 void push_1(int data){
     
@@ -23,7 +22,6 @@ void push_1(int data){
         cout << "Stack Overflow Error" << endl;
 }
 
-
 /*------------This function is used to push elements in stack 2-------------------------------*/
 void push_2(int data){
     
@@ -34,7 +32,6 @@ void push_2(int data){
     else
         cout << "Stack Overflow" << endl;
 }
-
 
 /*------------This function pops the element from the stack 1----------------------------------*/
 int pop_1(){
@@ -48,7 +45,6 @@ int pop_1(){
     }
 }
 
-
 /*-------------This function pops the element from the stack 2---------------------------------*/
 int pop_2(){
     
@@ -60,15 +56,12 @@ int pop_2(){
         return -1;
     }
 }
-
-
 /*------------This function displys the contents of stack 1---------------------------------*/
 void display_1(){
     if(top_1 == -1){
         cout << "Stack empty" << endl;
         return;
     }
-
     cout << "The Stack 1 elements are : ";
     
     for(int i = top_1; i > 0; i--)
