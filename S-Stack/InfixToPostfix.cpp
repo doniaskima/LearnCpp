@@ -1,10 +1,7 @@
 //---------- Infix expression to Postfix ------------//
-
 //#include <iostream>
 #include <bits/stdc++.h>
-
 using namespace std;
-
 // to comparare the precedence of operaters
 int precedence_comparision(char symbol){
 
@@ -31,7 +28,6 @@ int precedence_comparision(char symbol){
 
 // converts infix to postfix expression
 void InfixtoPostfix(string infix){
-
     // Using cpp built stack , For stack operation
     stack<char>  expression_stack;
     string result;
@@ -46,13 +42,11 @@ void InfixtoPostfix(string infix){
 
             result +=symbol;
         }
-
         //if it is " ( ", push in stack
         else if(symbol == '('){
 
             expression_stack.push('(');
         }
-
         //if it is " ) ", pop and output the string upto symbol '(' .
         else if(symbol == ')'){
 
